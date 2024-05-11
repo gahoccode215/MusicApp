@@ -1,10 +1,15 @@
 import mongoose from "mongoose";
 
-const topicSchema = new mongoose.Schema(
+const songSchema = new mongoose.Schema(
     {
         title: String,
         avatar: String,
         description: String,
+        singerId: String,
+        topicId: String,
+        like: Number,
+        lyrics: String,
+        audio: String,
         status: String,
         slug: String,
         deleted: {
@@ -18,6 +23,6 @@ const topicSchema = new mongoose.Schema(
     }
 );
 
-const Topic = mongoose.model("Topic", topicSchema, "topics");
+const Song = mongoose.model("Song", songSchema, "songs");
 
-export default Topic;
+export default Song;
