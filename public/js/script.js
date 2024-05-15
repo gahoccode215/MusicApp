@@ -20,6 +20,17 @@ if (elementAplayer) {
 
     const avatar = document.querySelector(".singer-detail .inner-avatar");
 
+    ap.on('ended', function () {
+        const link = `/songs/listen/${dataSong._id}`;
+        fetch(link, {
+            method: "PATCH"
+        })
+            .then(res => res.json())
+            .then(data => {
+                console.log(data);
+            })
+    });
+
     ap.on('play', function () {
         avatar.style.animationPlayState = "running";
     });
