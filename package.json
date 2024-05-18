@@ -10,11 +10,16 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.20.2",
+    "cloudinary": "^2.2.0",
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
+    "method-override": "^3.0.0",
     "mongoose": "^8.3.1",
     "mongoose-slug-updater": "^3.3.0",
+    "multer": "^1.4.5-lts.1",
     "pug": "^3.0.2",
+    "streamifier": "^0.1.1",
     "tinymce": "^7.1.0",
     "unidecode": "^1.0.1"
   },

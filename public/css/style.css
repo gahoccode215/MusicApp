@@ -252,6 +252,7 @@
 .singer-detail .inner-desc .inner-text {
     font-size: 14px;
     padding: 10px 15px;
+    white-space: pre;
 }
 
 /* End singer-detail */
